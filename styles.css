@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body,
+button {
+  background-color: var(--vltgray);
+  color: var(--t-white);
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 0.85rem;
+}
+
+:root {
+  --brightorange: hsl(31, 77%, 52%);
+  --dkcyan: hsl(184, 100%, 22%);
+  --vdkcyan: hsl(179, 100%, 13%);
+  --t-white: hsla(0, 0%, 100%, 0.75);
+  --vltgray: hsl(0, 0%, 95%);
+}
+
+@media only screen and (min-width: 62.5rem) {
+  .card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 56.25rem;
+    margin: auto;
+  }
+  .card .btn {
+    margin-top: 5.5rem;
+  }
+  .card-container .sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .card-container .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+.card-container {
+  padding: 5.625rem 1.5625rem;
+}
+
+.card {
+  padding: 3.125rem;
+}
+
+.card img {
+  padding-bottom: 1.5rem;
+}
+
+.card h3 {
+  padding-bottom: 1.5rem;
+}
+
+.card p {
+  padding-bottom: 0.625rem;
+}
+
+.btn {
+  background-color: var(--vltgray);
+  border: 2px solid var(--vltgray);
+  border-radius: 1.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 3ms ease;
+}
+.btn:hover {
+  background-color: transparent;
+  color: var(--vltgray) !important;
+}
+
+.sedans {
+  background-color: var(--brightorange);
+  border-radius: 0.5rem 0.5rem 0 0;
+  color: var(--vltgray);
+}
+.suvs {
+  background-color: var(--dkcyan);
+  color: var(--vltgray);
+}
+.luxury {
+  background-color: var(--vdkcyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+  color: var(--vltgray);
+}
+
+.sedans .btn {
+  color: var(--brightorange);
+  text-align: center;
+}
+.suvs .btn {
+  color: var(--dkcyan);
+  text-align: center;
+}
+.luxury .btn {
+  color: var(--vdkcyan);
+  text-align: center;
+}
+
+.attribution {
+  color: black;
+}
+
